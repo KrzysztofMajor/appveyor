@@ -6,7 +6,7 @@
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">Apache-2.0</license>
-    <projectUrl>https://github.com/samcoosh/lua.git</projectUrl>    
+    <projectUrl>https://github.com/KrzysztofMajor/lua.git</projectUrl>    
     <description>Lua 5.4.0</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
