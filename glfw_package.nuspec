@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>glfw</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Zlib</license>
+    <projectUrl>https://github.com/KrzysztofMajor/glfw.git</projectUrl>    
+    <description>glfw</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,glfw,C,C++</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/glfw.git" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="glfw.targets"     		   target="build\native\glfw.targets" />  
+	<file src="package_x86\include\**\*.h" target="build\native\include\lua\" />	
+	
+	<file src="package_x86\lib\*.lib" target="build\native\lib\Win32\" />
+	<file src="package_x64\lib\*.lib" target="build\native\lib\x64\" />	
+  </files>
+</package>
