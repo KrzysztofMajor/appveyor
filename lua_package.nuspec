@@ -11,7 +11,7 @@
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,lua,C</tags>
-	<repository type="git" url="https://github.com/samcoosh/lua.git" />
+	<repository type="git" url="https://github.com/KrzysztofMajor/lua.git" />
     <dependencies>
     </dependencies>
   </metadata>
