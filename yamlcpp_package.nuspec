@@ -22,11 +22,6 @@
 	<file src="package_x86\lib\yaml-cpp.lib" target="build\native\lib\Win32\yaml-cpp.lib" />
 	<file src="package_x64\lib\yaml-cpp.lib" target="build\native\lib\x64\yaml-cpp.lib" />
 	<file src="package_x86\lib\yaml-cppd.lib" target="build\native\lib\Win32\yaml-cppd.lib" />
-	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />
-	
-	<file src="package_x86\lib\yaml-cpp.lib" target="build\native\lib\Win32\yaml-cpp.lib" />
-	<file src="package_x86\lib\yaml-cpp.lib" target="build\native\lib\Win32\yaml-cpp.lib" />
-	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />
-	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />
+	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />	
   </files>
 </package>
