@@ -1,0 +1,25 @@
+image:
+  - Visual Studio 2019
+  
+install:  
+  - git clone --depth 1 https://github.com/KrzysztofMajor/yaml-cpp.git
+  
+before_build:
+- cmd: cmake -G "Visual Studio 16 2019" -A Win32 -H.\yaml-cpp -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DYAML_CPP_BUILD_TOOLS="OFF" -DYAML_CPP_BUILD_TESTS="OFF"
+- cmd: cmake -G "Visual Studio 16 2019" -A x64 -H.\yaml-cpp -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DYAML_CPP_BUILD_TOOLS="OFF" -DYAML_CPP_BUILD_TESTS="OFF"
+
+build_script:
+- cmd: cmake --build build_x86 --target INSTALL --config Release
+- cmd: cmake --build build_x64 --target INSTALL --config Release
+- cmd: cmake --build build_x86 --target INSTALL --config Debug
+- cmd: cmake --build build_x64 --target INSTALL --config Debug
+    
+after_test:
+  - cmd: nuget pack yamlcpp_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
+  
+artifacts:
+  - path: '**\*.nupkg'
+  
+deploy:
+- provider: Environment
+  name: production

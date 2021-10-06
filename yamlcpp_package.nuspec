@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>yaml-cpp</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/KrzysztofMajor/yaml-cpp.git</projectUrl>
+    <description>yaml-cpp is a YAML parser and emitter in C++ matching the YAML 1.2 spec</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,yaml-cpp,C++,C,yaml</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/yaml-cpp" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="yaml-cpp.targets"          target="build\native\yaml-cpp.targets" />  
+	<file src="package_x86\include\**\*.h" 	 target="build\native\include" />
+	
+	<file src="package_x86\lib\yaml-cpp.lib" target="build\native\lib\Win32\yaml-cpp.lib" />
+	<file src="package_x64\lib\yaml-cpp.lib" target="build\native\lib\x64\yaml-cpp.lib" />
+	<file src="package_x86\lib\yaml-cppd.lib" target="build\native\lib\Win32\yaml-cppd.lib" />
+	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />
+	
+	<file src="package_x86\lib\yaml-cpp.lib" target="build\native\lib\Win32\yaml-cpp.lib" />
+	<file src="package_x86\lib\yaml-cpp.lib" target="build\native\lib\Win32\yaml-cpp.lib" />
+	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />
+	<file src="package_x64\lib\yaml-cppd.lib" target="build\native\lib\x64\yaml-cppd.lib" />
+  </files>
+</package>
