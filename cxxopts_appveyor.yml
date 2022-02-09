@@ -1,5 +1,5 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
       
 install:  
   - git clone --depth 1 https://github.com/KrzysztofMajor/cxxopts.git
