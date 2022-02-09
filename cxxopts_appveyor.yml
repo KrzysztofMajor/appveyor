@@ -5,7 +5,7 @@ install:
   - git clone --depth 1 https://github.com/KrzysztofMajor/cxxopts.git
 
 before_build:
-- cmd: cmake -H.\cxxopts -G "Visual Studio 16 2019" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DCXXOPTS_BUILD_EXAMPLES="OFF" -DCXXOPTS_BUILD_TESTS="OFF"
+- cmd: cmake -H.\cxxopts -G "Visual Studio 17 2022" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DCXXOPTS_BUILD_EXAMPLES="OFF" -DCXXOPTS_BUILD_TESTS="OFF"
   
 build_script:
 - cmd: cmake --build build_x86 --target INSTALL --config Release
