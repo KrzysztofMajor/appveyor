@@ -1,16 +1,18 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
   
 install:  
   - git clone --depth 1 https://github.com/KrzysztofMajor/spdlog.git
   
 before_build:
-- cmd: cmake -H.\spdlog -G "Visual Studio 16 2019" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DSPDLOG_BUILD_EXAMPLE="OFF" -DSPDLOG_BUILD_TESTS="OFF"
-- cmd: cmake -H.\spdlog -G "Visual Studio 16 2019" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DSPDLOG_BUILD_EXAMPLE="OFF" -DSPDLOG_BUILD_TESTS="OFF"
+- cmd: cmake -H.\spdlog -G "Visual Studio 17 2022" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DSPDLOG_BUILD_EXAMPLE="OFF" -DSPDLOG_BUILD_TESTS="OFF"
+- cmd: cmake -H.\spdlog -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DSPDLOG_BUILD_EXAMPLE="OFF" -DSPDLOG_BUILD_TESTS="OFF"
+- cmd: cmake -H.\spdlog -G "Visual Studio 17 2022" -A ARM64 -B./build_arm64 -DCMAKE_SYSTEM_NAME=Android -DCMAKE_INSTALL_PREFIX=./package_arm64 -DSPDLOG_BUILD_EXAMPLE="OFF" -DSPDLOG_BUILD_TESTS="OFF" -DANDROID_CPP_FEATURES="rtti exceptions"
     
 build_script:
 - cmd: cmake --build build_x86 --target INSTALL --config Release
 - cmd: cmake --build build_x64 --target INSTALL --config Release
+- cmd: cmake --build build_arm64 --target INSTALL --config Release
   
 after_test:
   - cmd: nuget pack spdlog_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
