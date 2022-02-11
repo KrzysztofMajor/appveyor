@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
+<package>
   <metadata>
     <id>spdlog</id>
     <version>1.0.0</version>
@@ -23,3 +23,4 @@
 	<file src="package_x64\lib\spdlog.lib" target="build\native\lib\x64\spdlog.lib" />  
 	<file src="package_arm64\Release\libspdlog.a" target="build\native\lib\arm64\libspdlog.a" />	
   </files>
+</package>
