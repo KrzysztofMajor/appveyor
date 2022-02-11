@@ -21,4 +21,9 @@
       <AdditionalDependencies>x64\spdlog.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'ARM64' And ('$(PlatformToolset)' == 'Clang_5_0')">
+    <Link>
+      <AdditionalDependencies>arm64\libspdlog.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>  
 </Project>
