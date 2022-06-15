@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>bgfx-x64-Release</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Zlib</license>
+    <projectUrl>https://github.com/KrzysztofMajor/bgfx.git</projectUrl>    
+    <description>bgfx</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,bgfx,C,C++</tags>
+	<repository type="git" url="https://github.com/samcoosh/bgfx.git" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="bgfx-x64-Release.targets" target="build\native\bgfx-x64-Release.targets" />  
+	<file src="bgfx\include\**\*.h" target="build\native\include" />
+	<file src="bx\include\**\*.h" target="build\native\include" />
+	<file src="bimg\include\**\*.h" target="build\native\include" />
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bgfxRelease.lib" target="build\native\lib\bgfxRelease.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bgfxRelease.pdb" target="build\native\lib\bgfxRelease.pdb" />
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bimg_decodeRelease.lib" target="build\native\lib\bimg_decodeRelease.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bimg_decodeRelease.pdb" target="build\native\lib\bimg_decodeRelease.pdb" />
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bimgRelease.lib" target="build\native\lib\bimgRelease.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bimgRelease.pdb" target="build\native\lib\bimgRelease.pdb" />
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bxRelease.lib" target="build\native\lib\bxRelease.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bxRelease.pdb" target="build\native\lib\bxRelease.pdb" />
+  </files>
+</package>

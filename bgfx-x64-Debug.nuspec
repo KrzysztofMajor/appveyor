@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>bgfx-x64-Debug</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Zlib</license>
+    <projectUrl>https://github.com/KrzysztofMajor/bgfx.git</projectUrl>    
+    <description>bgfx</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,bgfx,C,C++</tags>
+	<repository type="git" url="https://github.com/samcoosh/bgfx.git" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="bgfx-x64-Debug.targets" target="build\native\bgfx-x64-Debug.targets" />  
+	<file src="bgfx\include\**\*.h" target="build\native\include" />
+	<file src="bx\include\**\*.h" target="build\native\include" />
+	<file src="bimg\include\**\*.h" target="build\native\include" />
+		
+	<file src="bgfx\.build\win64_vs2019\bin\bgfxDebug.lib" target="build\native\lib\bgfxDebug.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bgfxDebug.pdb" target="build\native\lib\bgfxDebug.pdb" />
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bimg_decodeDebug.lib" target="build\native\lib\bimg_decodeDebug.lib" />	
+	<file src="bgfx\.build\win64_vs2019\bin\bimg_decodeDebug.pdb" target="build\native\lib\bimg_decodeDebug.pdb" />	
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bimgDebug.lib" target="build\native\lib\bimgDebug.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bimgDebug.pdb" target="build\native\lib\bimgDebug.pdb" />
+	
+	<file src="bgfx\.build\win64_vs2019\bin\bxDebug.lib" target="build\native\lib\bxDebug.lib" />
+	<file src="bgfx\.build\win64_vs2019\bin\bxDebug.pdb" target="build\native\lib\bxDebug.pdb" />
+  </files>
+</package>
