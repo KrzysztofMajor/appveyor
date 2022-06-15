@@ -11,7 +11,7 @@
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,bgfx,C,C++</tags>
-	<repository type="git" url="https://github.com/samcoosh/bgfx.git" />
+	<repository type="git" url="https://github.com/KrzysztofMajor/bgfx.git" />
     <dependencies>
     </dependencies>
   </metadata>
