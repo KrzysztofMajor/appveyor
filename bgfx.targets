@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- general -->
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v142' And '$(Configuration)' == 'Debug'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>  
+    <Link>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+	<Link>
+      <AdditionalDependencies>bgfxDebug.lib;bimg_decodeDebug.lib;bimgDebug.lib;bxDebug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>   
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v142' And '$(Configuration)' == 'Release'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -11,5 +22,5 @@
 	<Link>
       <AdditionalDependencies>bgfxRelease.lib;bimg_decodeRelease.lib;bimgRelease.lib;bxRelease.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-  </ItemDefinitionGroup>   
+  </ItemDefinitionGroup> 
 </Project>
