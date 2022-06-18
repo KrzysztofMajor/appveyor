@@ -1,12 +1,12 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
   
 install:  
   - git clone --depth 1 https://github.com/KrzysztofMajor/glfw.git
   
 before_build:
-  - cmd: cmake -G "Visual Studio 16 2019" -A Win32 -H.\glfw -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DCMAKE_DEBUG_POSTFIX="d" -DGLFW_BUILD_EXAMPLES="OFF" -DGLFW_BUILD_TESTS="OFF" -DGLFW_BUILD_DOCS="OFF" 
-  - cmd: cmake -G "Visual Studio 16 2019" -A x64 -H.\glfw -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DCMAKE_DEBUG_POSTFIX="d" -DGLFW_BUILD_EXAMPLES="OFF" -DGLFW_BUILD_TESTS="OFF" -DGLFW_BUILD_DOCS="OFF" 
+  - cmd: cmake -G "Visual Studio 17 2022" -A Win32 -H.\glfw -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DCMAKE_DEBUG_POSTFIX="d" -DGLFW_BUILD_EXAMPLES="OFF" -DGLFW_BUILD_TESTS="OFF" -DGLFW_BUILD_DOCS="OFF" 
+  - cmd: cmake -G "Visual Studio 17 2022" -A x64 -H.\glfw -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DCMAKE_DEBUG_POSTFIX="d" -DGLFW_BUILD_EXAMPLES="OFF" -DGLFW_BUILD_TESTS="OFF" -DGLFW_BUILD_DOCS="OFF" 
     
 build_script:
   - cmd: cmake --build build_x86 --target INSTALL --config Release

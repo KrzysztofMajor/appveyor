@@ -11,12 +11,12 @@
   </ItemDefinitionGroup>
 
   <!-- static libraries -->
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v142')">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143')">
     <Link>
       <AdditionalDependencies>Win32\glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v142')">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143')">
     <Link>
       <AdditionalDependencies>x64\glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>

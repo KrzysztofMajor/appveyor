@@ -1,12 +1,12 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
   
 install:  
   - git clone --depth 1 https://github.com/KrzysztofMajor/lua.git
   
 before_build:
-- cmd: cmake -G "Visual Studio 16 2019" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86
-- cmd: cmake -G "Visual Studio 16 2019" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64
+- cmd: cmake -G "Visual Studio 17 2022" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86
+- cmd: cmake -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64
     
 build_script:
 - cmd: cmake --build build_x86 --target INSTALL --config Release

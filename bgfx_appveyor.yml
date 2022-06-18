@@ -1,5 +1,5 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
      
 install:  
   - git clone --depth 1 https://github.com/bkaradzic/bx
@@ -8,11 +8,11 @@ install:
 
 before_build:
 - cmd: cd bgfx
-- cmd: ..\bx\tools\bin\windows\genie %TOOLS% --with-tools --with-dynamic-runtime --platform=x64 vs2019
+- cmd: ..\bx\tools\bin\windows\genie %TOOLS% --with-tools --with-dynamic-runtime --platform=x64 vs2022
   
 build_script:
-- cmd: msbuild .build\projects\vs2019\bgfx.sln /t:Clean,Build /p:Configuration=Release /p:Platform=x64
-- cmd: msbuild .build\projects\vs2019\bgfx.sln /t:Clean,Build /p:Configuration=Debug /p:Platform=x64
+- cmd: msbuild .build\projects\vs2022\bgfx.sln /t:Clean,Build /p:Configuration=Release /p:Platform=x64
+- cmd: msbuild .build\projects\vs2022\bgfx.sln /t:Clean,Build /p:Configuration=Debug /p:Platform=x64
 - cmd: cd ..
 
 after_test:
