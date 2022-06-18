@@ -5,8 +5,8 @@ install:
   - git clone --depth 1 https://github.com/KrzysztofMajor/yaml-cpp.git
   
 before_build:
-- cmd: cmake -G "Visual Studio 17 2022" -A Win32 -H.\yaml-cpp -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DYAML_CPP_BUILD_TOOLS="OFF" -DYAML_CPP_BUILD_TESTS="OFF" -DBUILD_SHARED_LIBS="OFF"
-- cmd: cmake -G "Visual Studio 17 2022" -A x64 -H.\yaml-cpp -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DYAML_CPP_BUILD_TOOLS="OFF" -DYAML_CPP_BUILD_TESTS="OFF" -DBUILD_SHARED_LIBS="OFF"
+- cmd: cmake -G "Visual Studio 17 2022" -A Win32 -H.\yaml-cpp -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DYAML_CPP_BUILD_TOOLS="OFF" -DYAML_CPP_BUILD_TESTS="OFF" -DYAML_BUILD_SHARED_LIBS="OFF"
+- cmd: cmake -G "Visual Studio 17 2022" -A x64 -H.\yaml-cpp -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DYAML_CPP_BUILD_TOOLS="OFF" -DYAML_CPP_BUILD_TESTS="OFF" -DYAML_BUILD_SHARED_LIBS="OFF"
 
 build_script:
 - cmd: cmake --build build_x86 --target INSTALL --config Release
