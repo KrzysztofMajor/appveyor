@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>protobuf</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/KrzysztofMajor/protobuf</projectUrl>
+    <description>Protocol Buffers - Google's data interchange format</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,protobuf,C++,C</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/protobuf" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="protobuf.targets" target="build\native\protobuf.targets" />  
+	<file src="package_x86\include\**\*.h" 	 target="build\native\include" />
+	
+	<file src="package_x86\lib\*.lib" target="build\native\lib\Win32" />
+	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />
+	
+	<file src="package_x86\bin\*.exe" target="build\native\bin\Win32" />
+	<file src="package_x64\bin\*.exe" target="build\native\bin\x64" />
+  </files>
+</package>
