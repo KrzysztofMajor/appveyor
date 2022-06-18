@@ -6,12 +6,12 @@
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/yaml-cpp.git</projectUrl>
+    <projectUrl>https://github.com/KrzysztofMajor/protobuf.git</projectUrl>
     <description>yaml-cpp is a YAML parser and emitter in C++ matching the YAML 1.2 spec</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,yaml-cpp,C++,C,yaml</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/yaml-cpp" />
+	<repository type="git" url="https://github.com/KrzysztofMajor/protobuf" />
     <dependencies>
     </dependencies>
   </metadata>
