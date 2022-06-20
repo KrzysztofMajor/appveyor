@@ -9,7 +9,7 @@ before_build:
 - cmd: nuget sources
 - cmd: nuget restore -PackagesDirectory ./GameNetworkingSockets_CMakeLists/packages
 - cmd: call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
-- cmd: cmake -H.\GameNetworkingSockets_CMakeLists -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DGAMENETWORKINGSOCKETS_BUILD_EXAMPLES="OFF" -DGAMENETWORKINGSOCKETS_BUILD_TESTS="OFF" -DProtobuf_USE_STATIC_LIBS="ON" -DCMAKE_DEBUG_POSTFIX="d"
+- cmd: cmake -H.\GameNetworkingSockets_CMakeLists -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DBUILD_SHARED_LIB="OFF" -DBUILD_TESTS="OFF" -DProtobuf_USE_STATIC_LIBS="ON" -DCMAKE_DEBUG_POSTFIX="d"
 
     
 build_script:
