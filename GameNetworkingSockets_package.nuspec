@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>GameNetworkingSockets</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/KrzysztofMajor/appveyor</projectUrl>
+    <description>https://github.com/KrzysztofMajor/appveyor</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,valve,network,C++,C</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/appveyor" />
+    <dependencies>
+		<dependency id="openssl" version="1.0.23" />
+		<dependency id="protobuf" version="1.0.5" />
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="package.targets" target="build\native\GameNetworkingSockets.targets" />  
+	<file src="package_x64\include\GameNetworkingSockets\**\*.h" target="build\native\include" />	
+	
+	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />	
+	<file src="package_x64\bin\*.dll" target="build\native\bin\x64" />
+  </files>
+</package>

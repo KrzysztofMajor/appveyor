@@ -1,0 +1,27 @@
+image:
+  - Visual Studio 2022
+  
+install:  
+  - git clone --depth 1 https://github.com/ValveSoftware/GameNetworkingSockets.git
+  
+before_build:
+- cmd: nuget sources add -name appveyor -source https://ci.appveyor.com/nuget/krzysztofmajor-ilnu72arcjgl -username %nuget_user% -password %nuget_password%
+- cmd: nuget sources
+- cmd: nuget restore -PackagesDirectory ./packages
+- cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat"
+- cmd: cmake -H .\GameNetworkingSockets_CMakeLists -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DGAMENETWORKINGSOCKETS_BUILD_EXAMPLES="OFF" -DGAMENETWORKINGSOCKETS_BUILD_TESTS="OFF" -DProtobuf_USE_STATIC_LIBS="ON" -DCMAKE_DEBUG_POSTFIX="d"
+
+    
+build_script:
+- cmd: cmake --build build_x64 --target INSTALL --config Debug
+- cmd: cmake --build build_x64 --target INSTALL --config Release
+  
+after_test:
+  - cmd: nuget pack GameNetworkingSockets_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
+  
+artifacts:
+  - path: '**\*.nupkg'
+  
+deploy:
+- provider: Environment
+  name: production
