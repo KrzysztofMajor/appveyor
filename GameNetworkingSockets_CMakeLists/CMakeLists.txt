@@ -3,7 +3,7 @@ project(appveyor)
 
 set(OPENSSL_USE_STATIC_LIBS True)
 
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/GameNetworkingSockets_CMakeLists/cmake")	
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")	
 
 set(ARCH "Win32")
 if( MSVC )
