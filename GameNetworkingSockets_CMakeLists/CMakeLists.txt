@@ -20,4 +20,4 @@ SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packag
 SET(CMAKE_PROGRAM_PATH ${CMAKE_PROGRAM_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.5/build/native/bin/${ARCH}")	
 
 message(${OPENSSL_USE_STATIC_LIBS})
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/GameNetworkingSockets)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/source)

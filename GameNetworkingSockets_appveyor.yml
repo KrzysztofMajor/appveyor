@@ -2,7 +2,7 @@ image:
   - Visual Studio 2022
   
 install:  
-  - git clone --depth 1 https://github.com/ValveSoftware/GameNetworkingSockets.git
+  - git clone --depth 1 https://github.com/ValveSoftware/GameNetworkingSockets.git GameNetworkingSockets_CMakeLists\source
   
 before_build:
 - cmd: nuget sources add -name appveyor -source https://ci.appveyor.com/nuget/krzysztofmajor-ilnu72arcjgl -username %nuget_user% -password %nuget_password%
