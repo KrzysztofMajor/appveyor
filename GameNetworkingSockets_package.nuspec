@@ -18,7 +18,7 @@
     </dependencies>
   </metadata>
   <files>
-	<file src="package.targets" target="build\native\GameNetworkingSockets.targets" />  
+	<file src="GameNetworkingSockets.targets" target="build\native\GameNetworkingSockets.targets" />  
 	<file src="package_x64\include\GameNetworkingSockets\**\*.h" target="build\native\include" />	
 	
 	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />	
