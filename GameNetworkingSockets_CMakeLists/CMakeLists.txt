@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.9)
 project(appveyor)
 
 set(OPENSSL_USE_STATIC_LIBS True)
+set(OPENSSL_MSVC_STATIC_RT True)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")	
 
