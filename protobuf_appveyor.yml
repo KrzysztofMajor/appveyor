@@ -5,13 +5,10 @@ install:
   - git clone --depth 1 https://github.com/KrzysztofMajor/protobuf.git
   
 before_build:
-- cmd: cmake -H.\protobuf -G "Visual Studio 17 2022" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -Dprotobuf_BUILD_TESTS="OFF" -Dprotobuf_BUILD_EXAMPLES="OFF" -Dprotobuf_MSVC_STATIC_RUNTIME="OFF" -DCMAKE_DEBUG_POSTFIX="d"
 - cmd: cmake -H.\protobuf -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -Dprotobuf_BUILD_TESTS="OFF" -Dprotobuf_BUILD_EXAMPLES="OFF" -Dprotobuf_MSVC_STATIC_RUNTIME="OFF" -DCMAKE_DEBUG_POSTFIX="d"
     
 build_script:
-- cmd: cmake --build build_x86 --target INSTALL --config Debug
 - cmd: cmake --build build_x64 --target INSTALL --config Debug
-- cmd: cmake --build build_x86 --target INSTALL --config Release
 - cmd: cmake --build build_x64 --target INSTALL --config Release
   
 after_test:
