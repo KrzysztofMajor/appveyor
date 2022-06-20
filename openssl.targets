@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- general -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup> 
+
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143'">
+    <Link>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143'">
+    <Link>
+      <AdditionalDependencies>libcrypto-1_1-x64.lib;libssl-1_1-x64.lib;ws2_32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>  
+  
+  <!-- dynamic libraries
+  <Target Name="openssl_AfterBuild_x86_vc142" Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v142')" AfterTargets="AfterBuild">
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)Win32\bin\libssl-1_1.dll"    DestinationFiles="$(TargetDir)libssl-1_1.dll"        SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)Win32\bin\libcrypto-1_1.dll" DestinationFiles="$(TargetDir)libcrypto-1_1.dll"     SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="openssl_AfterBuild_x64_vc142" Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v142')" AfterTargets="AfterBuild">
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)x64\bin\libssl-1_1.dll"    DestinationFiles="$(TargetDir)libssl-1_1.dll"        SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)x64\bin\libcrypto-1_1.dll" DestinationFiles="$(TargetDir)libcrypto-1_1.dll"     SkipUnchangedFiles="true" />
+  </Target>
+   -->
+</Project>

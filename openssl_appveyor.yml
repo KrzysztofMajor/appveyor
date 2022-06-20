@@ -1,0 +1,23 @@
+image:
+  - Visual Studio 2022
+  
+install:  
+  - git clone --depth 1 https://github.com/KrzysztofMajor/openssl-cmake.git
+      
+before_build:
+- cmd: cmake -H.\openssl-cmake -G "Visual Studio 16 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64  -DCMAKE_DEBUG_POSTFIX="d"
+
+build_script:
+- cmd: cmake --build build_x64 --target INSTALL --config Debug
+- cmd: cmake --build build_x64 --target INSTALL --config Release
+
+after_test:
+  - cmd: cd %APPVEYOR_BUILD_FOLDER%
+  - cmd: nuget pack -Version %APPVEYOR_BUILD_VERSION%
+  
+artifacts:
+  - path: '**\*.nupkg'
+  
+deploy:
+- provider: Environment
+  name: production
