@@ -5,7 +5,7 @@ install:
   - git clone --branch 4.1 --depth 1 https://github.com/NVIDIAGameWorks/PhysX.git
   
 before_build:
-- cmd: cd physx
+- cmd: cd physx\physx
 - cmd: .\generate_projects.bat
     
 build_script:
