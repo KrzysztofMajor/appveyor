@@ -15,8 +15,12 @@
   </metadata>
   <files>
 	<file src="physx.targets" target="build\native\physx.targets" />  
-	<file src="package_x64\include\GameNetworkingSockets\**\*.h" target="build\native\include" />	
+	<file src="PhysX\physx\install\vc15win64\PhysX\include\**\*.h" target="build\native\include" />	
 	
-	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\release\*.lib" target="build\native\lib\x64\release" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\debug\*.lib" target="build\native\lib\x64\debug" />		
+	
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\release\*.dll" target="build\native\lib\x64\release" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\debug\*.dll" target="build\native\lib\x64\debug" />		
   </files>
 </package>
