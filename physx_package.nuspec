@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>physx</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/KrzysztofMajor/appveyor</projectUrl>
+    <description>https://github.com/KrzysztofMajor/appveyor</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,physx,network,C++,C</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/appveyor" />    
+  </metadata>
+  <files>
+	<file src="physx.targets" target="build\native\physx.targets" />  
+	<file src="package_x64\include\GameNetworkingSockets\**\*.h" target="build\native\include" />	
+	
+	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />		
+  </files>
+</package>
