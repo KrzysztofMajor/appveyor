@@ -1,5 +1,5 @@
 image:
-  - Visual Studio 2022
+  - Visual Studio 2019
   
 install:  
   - git clone --branch 4.1 --depth 1 https://github.com/NVIDIAGameWorks/PhysX.git
