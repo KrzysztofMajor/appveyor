@@ -6,7 +6,7 @@ install:
   
 before_build:
 - cmd: cd physx
-- cmd: generate_projects.bat
+- cmd: .\generate_projects.bat
     
 build_script:
 - cmd: cmake --build build_x64 --target INSTALL --config Debug
