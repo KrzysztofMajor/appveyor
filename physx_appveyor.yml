@@ -9,7 +9,6 @@ before_build:
 - cmd: .\generate_projects.bat vc16win64
     
 build_script:
-- cmd: dir PhysX/physx/compiler/vc16win64
 - cmd: cmake --build PhysX/physx/compiler/vc16win64 --target INSTALL --config Debug
 - cmd: cmake --build PhysX/physx/compiler/vc16win64 --target INSTALL --config Release
   
