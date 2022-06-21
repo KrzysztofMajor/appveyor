@@ -17,9 +17,9 @@ endif()
 SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/openssl.1.0.26/build/native/include")
 SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/openssl.1.0.26/build/native/${ARCH}/lib")	
 
-SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.9/build/native/include")
-SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.9/build/native/lib/${ARCH}")	
-SET(CMAKE_PROGRAM_PATH ${CMAKE_PROGRAM_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.9/build/native/bin/${ARCH}")	
+SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.12/build/native/include")
+SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.12/build/native/lib/${ARCH}")	
+SET(CMAKE_PROGRAM_PATH ${CMAKE_PROGRAM_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/protobuf.1.0.12/build/native/bin/${ARCH}")	
 
 message(${OPENSSL_USE_STATIC_LIBS})
 add_subdirectory(source)
