@@ -11,6 +11,7 @@ before_build:
 build_script:
 - cmd: cmake --build compiler/vc16win64 --target INSTALL --config Debug
 - cmd: cmake --build compiler/vc16win64 --target INSTALL --config Release
+- cmd: cd ..\..
   
 after_test:
   - cmd: nuget pack physx_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
