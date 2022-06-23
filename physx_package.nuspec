@@ -17,7 +17,7 @@
 	<file src="physx.targets" target="build\native\physx.targets" />  
 	<file src="PhysX\physx\install\vc15win64\PhysX\include\**\*.h" target="build\native\include" />	
 	<file src="PhysX\physx\install\vc15win64\PhysX\source\**\*.h" target="build\native\include" />	
-	<file src="PhysX\physx\install\vc15win64\PxShared\source\**\*.h" target="build\native\include" />	
+	<file src="PhysX\physx\install\vc15win64\PxShared\include\**\*.h" target="build\native\include" />	
 	
 	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\release\*.lib" target="build\native\lib\x64\release" />		
 	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\debug\*.lib" target="build\native\lib\x64\debug" />		
