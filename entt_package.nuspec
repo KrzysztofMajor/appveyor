@@ -18,5 +18,6 @@
   <files>
 	<file src="entt.targets"     target="build\native\entt.targets" />
 	<file src="package_x64\include\**\*.h" 		target="build\native\include" />
+	<file src="package_x64\include\**\*.hpp" 		target="build\native\include" />
   </files>
 </package>
