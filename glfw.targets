@@ -8,9 +8,7 @@
     <Link>
       <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
-  </ItemDefinitionGroup>
-
-  <!-- static libraries -->
+  </ItemDefinitionGroup>  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143')">
     <Link>
       <AdditionalDependencies>Win32\glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
