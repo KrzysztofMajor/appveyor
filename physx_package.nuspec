@@ -6,8 +6,8 @@
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/appveyor</projectUrl>
-    <description>https://github.com/KrzysztofMajor/appveyor</description>
+    <projectUrl>https://github.com/KrzysztofMajor/PhysX</projectUrl>
+    <description>https://github.com/KrzysztofMajor/PhysX</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,physx,network,C++,C</tags>
@@ -19,10 +19,10 @@
 	<file src="PhysX\physx\install\vc15win64\PhysX\source\**\*.h" target="build\native\include" />	
 	<file src="PhysX\physx\install\vc15win64\PxShared\include\**\*.h" target="build\native\include" />	
 	
-	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\release\*.lib" target="build\native\lib\x64\release" />		
-	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\debug\*.lib" target="build\native\lib\x64\debug" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.md\release\*.lib" target="build\native\lib\x64\release" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.md\debug\*.lib" target="build\native\lib\x64\debug" />		
 	
-	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\release\*.dll" target="build\native\lib\x64\release" />		
-	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.mt\debug\*.dll" target="build\native\lib\x64\debug" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.md\release\*.pdb" target="build\native\lib\x64\release" />		
+	<file src="PhysX\physx\install\vc15win64\physX\bin\win.x86_64.vc142.md\debug\*.pdb" target="build\native\lib\x64\debug" />		
   </files>
 </package>

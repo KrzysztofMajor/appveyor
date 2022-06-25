@@ -1,16 +1,16 @@
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
   
 install:  
-  - git clone --branch 4.1 --depth 1 https://github.com/NVIDIAGameWorks/PhysX.git
+  - git clone --branch 4.1 --depth 1 https://github.com/KrzysztofMajor/PhysX.git
   
 before_build:
 - cmd: cd physx\physx
-- cmd: .\generate_projects.bat vc16win64
+- cmd: .\generate_projects.bat vc17win64
     
 build_script:
-- cmd: cmake --build compiler/vc16win64 --target INSTALL --config Debug
-- cmd: cmake --build compiler/vc16win64 --target INSTALL --config Release
+- cmd: cmake --build compiler/vc17win64 --target INSTALL --config Debug
+- cmd: cmake --build compiler/vc17win64 --target INSTALL --config Release
 - cmd: cd ..\..
   
 after_test:
