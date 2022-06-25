@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>box2d</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/erincatto/box2d.git</projectUrl>    
+    <description>box2d</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,C,C++</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/appveyor" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="box2d.targets"     target="build\native\box2d.targets" />
+	<file src="package_x64\include\**\*.h" target="build\native\include" />
+	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />
+  </files>
+</package>
