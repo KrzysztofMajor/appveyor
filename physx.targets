@@ -11,14 +11,26 @@
     </Link>
   </ItemDefinitionGroup>
 
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
-    <Link>
-      <AdditionalDependencies>x64\GameNetworkingSockets_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Debug'">
     <Link>
-      <AdditionalDependencies>x64\GameNetworkingSockets_sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>
+	  x64\debug\PhysXCharacterKinematic_static_64.lib;
+	  x64\debug\PhysXCommon_static_64.lib;x64\debug\PhysXCooking_static_64.lib;
+	  x64\debug\PhysXExtensions_static_64.lib;x64\debug\PhysXFoundation_static_64.lib;
+	  x64\debug\PhysXPvdSDK_static_64.lib;x64\debug\PhysXVehicle_static_64.lib;
+	  x64\debug\PhysX_static_64.lib;%(AdditionalDependencies)
+	  </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>  
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
+    <Link>
+      <AdditionalDependencies>
+	  x64\release\PhysXCharacterKinematic_static_64.lib;
+	  x64\release\PhysXCommon_static_64.lib;x64\release\PhysXCooking_static_64.lib;
+	  x64\release\PhysXExtensions_static_64.lib;x64\release\PhysXFoundation_static_64.lib;
+	  x64\release\PhysXPvdSDK_static_64.lib;x64\release\PhysXVehicle_static_64.lib;
+	  x64\release\PhysX_static_64.lib;%(AdditionalDependencies)
+	  </AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
 </Project>
