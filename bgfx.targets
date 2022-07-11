@@ -4,6 +4,7 @@
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Configuration)' == 'Debug'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);USING_BGFX</PreprocessorDefinitions>
     </ClCompile>  
     <Link>
       <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -15,6 +16,7 @@
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Configuration)' == 'Release'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);USING_BGFX</PreprocessorDefinitions>
     </ClCompile>  
     <Link>
       <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
