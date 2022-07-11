@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>sokol</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/floooh/sokol.git</projectUrl>    
+    <description>sokol</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,C,C++</tags>
+	<repository type="git" url="https://github.com/KrzysztofMajor/appveyor" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="sokol.targets" target="build\native\sokol.targets" />
+	<file src="*.h" target="build\native\include" />
+	<file src="util\*.h" target="build\native\include\util" />
+  </files>
+</package>
