@@ -16,8 +16,8 @@
     </dependencies>
   </metadata>
   <files>
-	<file src="sokol.targets" target="build\native\sokol.targets" />
-	<file src="*.h" target="build\native\include" />
-	<file src="util\*.h" target="build\native\include\util" />
+	<file src="sokol\sokol.targets" target="build\native\sokol.targets" />
+	<file src="sokol\*.h" target="build\native\include" />
+	<file src="sokol\util\*.h" target="build\native\include\util" />
   </files>
 </package>
