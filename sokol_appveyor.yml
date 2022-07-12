@@ -3,6 +3,7 @@ image:
   
 install:  
   - git clone --depth 1 https://github.com/floooh/sokol.git  
+  - git clone --depth 1 https://github.com/floooh/sokol-tools-bin.git
     
 build_script:
   - cmd: nuget pack sokol_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
