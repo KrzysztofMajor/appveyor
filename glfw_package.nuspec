@@ -20,7 +20,7 @@
 	<file src="glfw.targets" target="build\fluid.glfw.targets" />  
 	<file src="package_x86\include\**\*.h" target="build\include\" />	
 	
-	<file src="package_x86\lib\*.lib" target="lib\native\Win32\" />
-	<file src="package_x64\lib\*.lib" target="lib\native\x64\" />	
+	<file src="package_x86\lib\*.lib" target="build\native\lib\Win32\" />
+	<file src="package_x64\lib\*.lib" target="build\native\lib\x64\" />		
   </files>
 </package>
