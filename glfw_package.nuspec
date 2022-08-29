@@ -17,8 +17,8 @@
     </dependencies>
   </metadata>
   <files>
-	<file src="glfw.targets" target="build\native\glfw.targets" />  
-	<file src="package_x86\include\**\*.h" target="build\native\include\" />	
+	<file src="glfw.targets" target="build\glfw.targets" />  
+	<file src="package_x86\include\**\*.h" target="build\include\" />	
 	
 	<file src="package_x86\lib\*.lib" target="lib\native\Win32\" />
 	<file src="package_x64\lib\*.lib" target="lib\native\x64\" />	
