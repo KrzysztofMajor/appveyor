@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>sokol</id>
+    <id>fluid.sokol</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,7 +11,7 @@
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,C,C++</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/appveyor" />
+	<repository type="git" url="https://github.com/floooh/sokol.git" />
     <dependencies>
     </dependencies>
   </metadata>
