@@ -13,6 +13,7 @@
     <tags>native,glfw,C,C++</tags>
 	<repository type="git" url="https://github.com/glfw/glfw.git" />
     <dependencies>
+	<group targetFramework="native" />
     </dependencies>
   </metadata>
   <files>
