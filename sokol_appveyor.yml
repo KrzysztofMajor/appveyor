@@ -13,4 +13,4 @@ artifacts:
   
 deploy:
 - provider: Environment
-  name: production
+  name: nuget
