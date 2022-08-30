@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>fluid.paho_mqtt</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/eclipse/paho.mqtt.c.git</projectUrl>
+    <description>Eclipse Paho C Client Library for the MQTT Protocol</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,mqtt,C++,C,yaml</tags>
+	<repository type="git" url="https://github.com/eclipse/paho.mqtt.c.git" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="paho_mqtt.targets"          target="build\fluid.paho_mqtt.targets" />  
+	<file src="package_x86\include\**\*.h" 	 target="build\include" />
+	
+	<file src="package_x86\lib\yaml-cpp.lib" target="build\lib\Win32\yaml-cpp.lib" />
+	<file src="package_x64\lib\yaml-cpp.lib" target="build\lib\x64\yaml-cpp.lib" />
+	<file src="package_x86\lib\yaml-cppd.lib" target="build\lib\Win32\yaml-cppd.lib" />
+	<file src="package_x64\lib\yaml-cppd.lib" target="build\lib\x64\yaml-cppd.lib" />	
+  </files>
+</package>
