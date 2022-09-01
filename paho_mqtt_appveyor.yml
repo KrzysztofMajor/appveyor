@@ -5,8 +5,8 @@ install:
   - git clone --depth 1 https://github.com/eclipse/paho.mqtt.c.git
   
 before_build:
-- cmd: cmake -G "Visual Studio 17 2022" -A Win32 -H.\paho.mqtt.c -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DPAHO_BUILD_SHARED="FALSE" -DPAHO_BUILD_STATIC="TRUE" -DPAHO_ENABLE_TESTING="FALSE"
-- cmd: cmake -G "Visual Studio 17 2022" -A x64 -H.\paho.mqtt.c -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DPAHO_BUILD_SHARED="FALSE" -DPAHO_BUILD_STATIC="TRUE" -DPAHO_ENABLE_TESTING="FALSE"
+- cmd: cmake -G "Visual Studio 17 2022" -A Win32 -H.\paho.mqtt.c -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86 -DCMAKE_DEBUG_POSTFIX="d" -DPAHO_BUILD_SHARED="FALSE" -DPAHO_BUILD_STATIC="TRUE" -DPAHO_ENABLE_TESTING="FALSE"
+- cmd: cmake -G "Visual Studio 17 2022" -A x64 -H.\paho.mqtt.c -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DCMAKE_DEBUG_POSTFIX="d" -DPAHO_BUILD_SHARED="FALSE" -DPAHO_BUILD_STATIC="TRUE" -DPAHO_ENABLE_TESTING="FALSE"
 
 build_script:
 - cmd: cmake --build build_x86 --target INSTALL --config Release

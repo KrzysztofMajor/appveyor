@@ -19,9 +19,9 @@
 	<file src="paho_mqtt.targets"          target="build\fluid.paho_mqtt.targets" />  
 	<file src="package_x86\include\**\*.h" 	 target="build\include" />
 	
-	<file src="package_x86\lib\yaml-cpp.lib" target="build\lib\Win32\yaml-cpp.lib" />
-	<file src="package_x64\lib\yaml-cpp.lib" target="build\lib\x64\yaml-cpp.lib" />
-	<file src="package_x86\lib\yaml-cppd.lib" target="build\lib\Win32\yaml-cppd.lib" />
-	<file src="package_x64\lib\yaml-cppd.lib" target="build\lib\x64\yaml-cppd.lib" />	
+	<file src="package_x86\lib\*.lib" target="build\lib\Win32" />
+	<file src="package_x64\lib\*.lib" target="build\lib\x64" />
+	<file src="package_x86\lib\*.lib" target="build\lib\Win32" />
+	<file src="package_x64\lib\*.lib" target="build\lib\x64" />	
   </files>
 </package>
