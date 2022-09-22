@@ -11,12 +11,12 @@
   </ItemDefinitionGroup>  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Debug'">
     <Link>
-      <AdditionalDependencies>Win32\assimp-vc143-mtd.lib;x64\zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc143-mtd.lib;zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
     <Link>
-      <AdditionalDependencies>x64\assimp-vc143-mt.lib;x64\zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc143-mt.lib;zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
 </Project>
