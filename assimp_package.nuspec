@@ -18,6 +18,7 @@
   <files>
 	<file src="assimp.targets" target="build\fluid.assimp.targets" />  
 	<file src="package_x86\include\**\*.h" target="build\include\" />	
+	<file src="package_x86\include\**\*.inl" target="build\include\" />
 	
 	<file src="package_x86\lib\*.lib" target="build\lib\Win32\" />
 	<file src="package_x64\lib\*.lib" target="build\lib\x64\" />	
