@@ -19,6 +19,7 @@
 	<file src="assimp.targets" target="build\fluid.assimp.targets" />  
 	<file src="package_x64\include\**\*.h" target="build\include\" />	
 	<file src="package_x64\include\**\*.inl" target="build\include\" />
+	<file src="package_x64\include\**\*.hpp" target="build\include\" />
 	
 	<file src="package_x64\lib\*.lib" target="build\lib\" />
   </files>
