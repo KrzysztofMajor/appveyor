@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>bgfx</id>
+    <id>fluid.bgfx</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">Zlib</license>
-    <projectUrl>https://github.com/KrzysztofMajor/bgfx.git</projectUrl>    
+    <projectUrl>https://github.com/bkaradzic/bgfx.git</projectUrl>    
     <description>bgfx</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,bgfx,C,C++</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/bgfx.git" />
+	<repository type="git" url="https://github.com/bkaradzic/bgfx.git" />
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-	<file src="bgfx.targets" target="build\native\bgfx.targets" />  
-	<file src="bgfx\include\**\*.h" target="build\native\include" />
-	<file src="bx\include\**\*.h" target="build\native\include" />
-	<file src="bimg\include\**\*.h" target="build\native\include" />
+	<file src="bgfx.targets" target="build\fluid.bgfx.targets" />  
+	<file src="bgfx\include\**\*.h" target="build\include" />
+	<file src="bx\include\**\*.h" target="build\include" />
+	<file src="bimg\include\**\*.h" target="build\include" />
 		
-	<file src="bgfx\.build\win64_vs2022\bin\bgfxDebug.lib" target="build\native\lib\bgfxDebug.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bgfxDebug.pdb" target="build\native\lib\bgfxDebug.pdb" />
-	<file src="bgfx\.build\win64_vs2022\bin\bgfxRelease.lib" target="build\native\lib\bgfxRelease.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bgfxRelease.pdb" target="build\native\lib\bgfxRelease.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bgfxDebug.lib" target="build\lib\bgfxDebug.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bgfxDebug.pdb" target="build\lib\bgfxDebug.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bgfxRelease.lib" target="build\lib\bgfxRelease.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bgfxRelease.pdb" target="build\lib\bgfxRelease.pdb" />
 	
-	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeDebug.lib" target="build\native\lib\bimg_decodeDebug.lib" />	
-	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeDebug.pdb" target="build\native\lib\bimg_decodeDebug.pdb" />	
-	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeRelease.lib" target="build\native\lib\bimg_decodeRelease.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeRelease.pdb" target="build\native\lib\bimg_decodeRelease.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeDebug.lib" target="build\lib\bimg_decodeDebug.lib" />	
+	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeDebug.pdb" target="build\lib\bimg_decodeDebug.pdb" />	
+	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeRelease.lib" target="build\lib\bimg_decodeRelease.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bimg_decodeRelease.pdb" target="build\lib\bimg_decodeRelease.pdb" />
 	
-	<file src="bgfx\.build\win64_vs2022\bin\bimgDebug.lib" target="build\native\lib\bimgDebug.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bimgDebug.pdb" target="build\native\lib\bimgDebug.pdb" />
-	<file src="bgfx\.build\win64_vs2022\bin\bimgRelease.lib" target="build\native\lib\bimgRelease.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bimgRelease.pdb" target="build\native\lib\bimgRelease.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bimgDebug.lib" target="build\lib\bimgDebug.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bimgDebug.pdb" target="build\lib\bimgDebug.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bimgRelease.lib" target="build\lib\bimgRelease.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bimgRelease.pdb" target="build\lib\bimgRelease.pdb" />
 	
-	<file src="bgfx\.build\win64_vs2022\bin\bxDebug.lib" target="build\native\lib\bxDebug.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bxDebug.pdb" target="build\native\lib\bxDebug.pdb" />
-	<file src="bgfx\.build\win64_vs2022\bin\bxRelease.lib" target="build\native\lib\bxRelease.lib" />
-	<file src="bgfx\.build\win64_vs2022\bin\bxRelease.pdb" target="build\native\lib\bxRelease.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bxDebug.lib" target="build\lib\bxDebug.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bxDebug.pdb" target="build\lib\bxDebug.pdb" />
+	<file src="bgfx\.build\win64_vs2022\bin\bxRelease.lib" target="build\lib\bxRelease.lib" />
+	<file src="bgfx\.build\win64_vs2022\bin\bxRelease.pdb" target="build\lib\bxRelease.pdb" />
 	
-	<file src="bgfx\.build\win64_vs2022\bin\*.exe" target="build\native\bin" />
+	<file src="bgfx\.build\win64_vs2022\bin\*.exe" target="build\bin" />
   </files>
 </package>
