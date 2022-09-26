@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>entt</id>
+    <id>fluid.entt</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/glm.git</projectUrl>    
+    <projectUrl>https://github.com/skypjack/entt.git</projectUrl>    
     <description>entt</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,C,C++</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/appveyor" />
+	<repository type="git" url="https://github.com/skypjack/entt.git" />
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-	<file src="entt.targets"     target="build\native\entt.targets" />
-	<file src="package_x64\include\**\*.h" 		target="build\native\include" />
-	<file src="package_x64\include\**\*.hpp" 		target="build\native\include" />
+	<file src="entt.targets"     target="build\entt.targets" />
+	<file src="package_x64\include\**\*.h" target="build\include" />
+	<file src="package_x64\include\**\*.hpp" target="build\include" />
   </files>
 </package>
