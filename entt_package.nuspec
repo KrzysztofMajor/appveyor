@@ -16,7 +16,7 @@
     </dependencies>
   </metadata>
   <files>
-	<file src="entt.targets"     target="build\entt.targets" />
+	<file src="entt.targets"     target="build\fluid.entt.targets" />
 	<file src="package_x64\include\**\*.h" target="build\include" />
 	<file src="package_x64\include\**\*.hpp" target="build\include" />
   </files>
