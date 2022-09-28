@@ -10,20 +10,10 @@
     </Link>
   </ItemDefinitionGroup>
 
-  <!-- static libraries -->
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143')">
-    <Link>
-      <AdditionalDependencies>Win32\spdlog.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
+  <!-- static libraries -->  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143')">
     <Link>
-      <AdditionalDependencies>x64\spdlog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>spdlog.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-  </ItemDefinitionGroup>  
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'ARM64' And ('$(PlatformToolset)' == 'Clang_5_0')">
-    <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)lib\arm64\libspdlog.a;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>  
+  </ItemDefinitionGroup>    
 </Project>

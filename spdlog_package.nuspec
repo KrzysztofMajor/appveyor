@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>spdlog</id>
+    <id>fluid.spdlog</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/spdlog.git</projectUrl>    
+    <projectUrl>https://github.com/gabime/spdlog.git</projectUrl>    
     <description>spdlog</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,C,C++</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/spdlog.git" />
+	<repository type="git" url="https://github.com/gabime/spdlog.git" />
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-	<file src="spdlog.targets"          	target="build\native\spdlog.targets" />  
-	<file src="package_x86\include\**\*.h" 	target="build\native\include" />
-	
-	<file src="package_x86\lib\spdlog.lib" target="build\native\lib\Win32\spdlog.lib" />
-	<file src="package_x64\lib\spdlog.lib" target="build\native\lib\x64\spdlog.lib" />  
-	<file src="package_arm64\lib\libspdlog.a" target="build\native\lib\arm64\libspdlog.a" />	
+	<file src="spdlog.targets"             target="build\fluid.spdlog.targets" />  
+	<file src="package_x64\include\**\*.h" target="build\include" />		
+	<file src="package_x64\lib\spdlog.lib" target="build\lib\spdlog.lib" />  	
   </files>
 </package>
