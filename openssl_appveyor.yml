@@ -2,7 +2,7 @@ image:
   - Visual Studio 2022
   
 install:  
-  - git clone --depth 1 https://github.com/KrzysztofMajor/openssl-cmake.git
+  - git clone --depth 1 https://github.com/janbar/openssl-cmake.git
       
 before_build:
 - cmd: cmake -H.\openssl-cmake -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64  -DCMAKE_DEBUG_POSTFIX="d"
@@ -20,4 +20,4 @@ artifacts:
   
 deploy:
 - provider: Environment
-  name: production
+  name: nuget
