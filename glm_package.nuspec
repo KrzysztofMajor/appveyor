@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>glm</id>
+    <id>fluid.glm</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/glm.git</projectUrl>    
+    <projectUrl>https://github.com/g-truc/glm.git</projectUrl>    
     <description>glm</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,C,C++</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/glm.git" />
+	<repository type="git" url="https://github.com/g-truc/glm.git" />
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-	<file src="glm.targets"     target="build\native\glm.targets" />  
-	<file src="glm\glm\**\*.hpp" 	target="build\native\include\glm" />
-	<file src="glm\glm\**\*.inl" 	target="build\native\include\glm" />
-	<file src="glm\glm\**\*.h" 		target="build\native\include\glm" />
+	<file src="glm.targets"     target="build\fluid.glm.targets" />  
+	<file src="glm\glm\**\*.hpp" 	target="build\include\glm" />
+	<file src="glm\glm\**\*.inl" 	target="build\include\glm" />
+	<file src="glm\glm\**\*.h" 		target="build\include\glm" />
   </files>
 </package>
