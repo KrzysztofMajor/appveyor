@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>physfs</id>
+    <id>fluid.physfs</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -16,8 +16,8 @@
     </dependencies>
   </metadata>
   <files>
-	<file src="physfs.targets"     target="build\native\physfs.targets" />
-	<file src="package_x64\include\**\*.h" target="build\native\include" />
-	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />
+	<file src="physfs.targets" target="build\fluid.physfs.targets" />
+	<file src="package_x64\include\**\*.h" target="build\include" />
+	<file src="package_x64\lib\*.lib" target="build\lib\x64" />
   </files>
 </package>
