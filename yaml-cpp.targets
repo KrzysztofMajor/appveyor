@@ -10,26 +10,15 @@
     </Link>
   </ItemDefinitionGroup>
 
-  <!-- static libraries -->
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
-    <Link>
-      <AdditionalDependencies>Win32\yaml-cpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
+  <!-- static libraries -->  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
     <Link>
-      <AdditionalDependencies>x64\yaml-cpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>yaml-cpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-  </ItemDefinitionGroup>
-  
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'vv143') And '$(Configuration)' == 'Debug'">
-    <Link>
-      <AdditionalDependencies>Win32\yaml-cppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
+  </ItemDefinitionGroup>  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'vv143') And '$(Configuration)' == 'Debug'">
     <Link>
-      <AdditionalDependencies>x64\yaml-cppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>yaml-cppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
 </Project>
