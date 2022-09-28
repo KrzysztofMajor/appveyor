@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>cxxopts</id>
+    <id>fluid.cxxopts</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/cxxopts.git</projectUrl>
+    <projectUrl>https://github.com/jarro2783/cxxopts.git</projectUrl>
     <description>This is a lightweight C++ option parser library</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,cxxopts,C++,C</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/cxxopts.git" />
+	<repository type="git" url="https://github.com/jarro2783/cxxopts.git" />
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-	<file src="cxxopts.targets"          target="build\native\cxxopts.targets" />  
-	<file src="package_x86\include\**\*.hpp" 	 target="build\native\include" />
+	<file src="cxxopts.targets"              target="build\fluid.cxxopts.targets" />  
+	<file src="package_x86\include\**\*.hpp" target="build\include" />
   </files>
 </package>
