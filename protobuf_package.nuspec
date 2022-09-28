@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>protobuf</id>
+    <id>fluid.protobuf</id>
     <version>1.0.0</version>
     <authors>samcoosh</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/KrzysztofMajor/protobuf</projectUrl>
+    <projectUrl>https://github.com/protocolbuffers/protobuf.git</projectUrl>
     <description>Protocol Buffers - Google's data interchange format</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,protobuf,C++,C</tags>
-	<repository type="git" url="https://github.com/KrzysztofMajor/protobuf" />
+	<repository type="git" url="https://github.com/protocolbuffers/protobuf.git" />
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-	<file src="protobuf.targets" target="build\native\protobuf.targets" />  
-	<file src="package_x64\include\**\*.h" 	 target="build\native\include" />
+	<file src="protobuf.targets" target="build\fluid.protobuf.targets" />  
+	<file src="package_x64\include\**\*.h" 	 target="build\include" />
 	
-	<file src="package_x64\lib\*.lib" target="build\native\lib\x64" />
+	<file src="package_x64\lib\*.lib" target="build\lib\x64" />
 	
-	<file src="package_x64\bin\*.exe" target="build\native\bin\x64" />
+	<file src="package_x64\bin\*.exe" target="build\bin\x64" />
   </files>
 </package>
