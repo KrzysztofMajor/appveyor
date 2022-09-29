@@ -13,12 +13,12 @@
 
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
     <Link>
-      <AdditionalDependencies>x64\GameNetworkingSockets_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>GameNetworkingSockets_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Debug'">
     <Link>
-      <AdditionalDependencies>x64\GameNetworkingSockets_sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>GameNetworkingSockets_sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
 </Project>
