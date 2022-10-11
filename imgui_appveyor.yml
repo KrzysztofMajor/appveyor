@@ -8,7 +8,7 @@ before_build:
 - cmd: cmake -H.\imgui -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64
     
 build_script:
-- cmd: cmake --build build_x64 --target INSTALL --config Releases
+- cmd: cmake --build build_x64 --target INSTALL --config Release
   
 after_test:
   - cmd: nuget pack imgui_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
