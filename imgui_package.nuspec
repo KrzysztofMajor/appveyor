@@ -17,6 +17,7 @@
   </metadata>
   <files>
 	<file src="imgui.targets"     target="build\fluid.imgui.targets" />
-	<file src="imgui\*.h"         target="build\include" />
+	<file src="package_x64\include\*.h"         target="build\include" />
+	<file src="package_x64\lib\*.lib"         target="build\lib" />
   </files>
 </package>
