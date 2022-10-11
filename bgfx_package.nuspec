@@ -20,6 +20,9 @@
 	<file src="bgfx\include\**\*.h" target="build\include" />
 	<file src="bx\include\**\*.h" target="build\include" />
 	<file src="bimg\include\**\*.h" target="build\include" />
+	<file src="bgfx\include\**\*.inl" target="build\include" />
+	<file src="bx\include\**\*.inl" target="build\include" />
+	<file src="bimg\include\**\*.inl" target="build\include" />
 		
 	<file src="bgfx\.build\win64_vs2022\bin\bgfxDebug.lib" target="build\lib\bgfxDebug.lib" />
 	<file src="bgfx\.build\win64_vs2022\bin\bgfxDebug.pdb" target="build\lib\bgfxDebug.pdb" />
