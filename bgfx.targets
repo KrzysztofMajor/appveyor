@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!-- general -->
+  <PropertyGroup>
+	<shaderc>$(MSBuildThisFileDirectory)bin\shadercRelease.exe</shaderc>
+  </PropertyGroup>
+  <ItemGroup>
+  <BuildMacro Include="shaderc"> <Value>$(shaderc)</Value></BuildMacro>
+  </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And '$(PlatformToolset)' == 'v143' And '$(Configuration)' == 'Debug'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;$(MSBuildThisFileDirectory)include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
