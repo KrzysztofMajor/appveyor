@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>fluid.imgui</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/ocornut/imgui.git</projectUrl>    
+    <description>imgui</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,C,C++</tags>
+	<repository type="git" url="https://github.com/ocornut/imgui.git" />
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="imgui.targets"     target="build\fluid.imgui.targets" />
+	<file src="imgui\*.h"         target="build\include" />
+  </files>
+</package>
