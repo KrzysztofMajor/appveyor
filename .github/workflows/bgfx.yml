@@ -40,7 +40,7 @@ jobs:
         shell: cmd
         run: |
           cd bgfx
-          ..\bx\tools\bin\windows\genie.exe --with-tools --with-combined-examples --with-shared-lib vs2019
+          ..\bx\tools\bin\windows\genie.exe --with-tools --with-shared-lib vs2019
           msbuild ".build/projects/vs2019/bgfx.sln" /m /v:minimal /p:Configuration=${{ matrix.config }} /p:Platform=${{ matrix.platform }}
       - name: Check
         shell: cmd
