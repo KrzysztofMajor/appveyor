@@ -1,0 +1,52 @@
+# This is a basic workflow to help you get started with Actions
+
+name: bgfx
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  msvc:
+    strategy:
+      fail-fast: true
+      matrix:
+        include: [
+          { config: Debug, platform: Win32, bindir: 'win32_vs2019' },
+          { config: Debug, platform: x64, bindir: 'win64_vs2019' },
+          { config: Release, platform: Win32, bindir: 'win32_vs2019' },
+          { config: Release, platform: x64, bindir: 'win64_vs2019' },
+        ]
+    name: msvc-${{ matrix.config }}-${{ matrix.platform }}
+    runs-on: windows-2019
+    steps:
+      - name: Checkout bgfx
+        uses: actions/checkout@v3
+        with:
+          path: bgfx
+      - name: Checkout bx
+        uses: actions/checkout@v3
+        with:
+          repository: bkaradzic/bx
+          path: bx
+      - name: Checkout bimg
+        uses: actions/checkout@v3
+        with:
+          repository: bkaradzic/bimg
+          path: bimg
+      - name: Prepare
+        uses: microsoft/setup-msbuild@v1.1
+      - name: Build
+        shell: cmd
+        run: |
+          cd bgfx
+          ..\bx\tools\bin\windows\genie.exe --with-tools --with-combined-examples --with-shared-lib vs2019
+          msbuild ".build/projects/vs2019/bgfx.sln" /m /v:minimal /p:Configuration=${{ matrix.config }} /p:Platform=${{ matrix.platform }}
+      - name: Check
+        shell: cmd
+        run: |
+          cd bgfx
+          dir /s ".build\${{ matrix.bindir }}\bin"
+          ".build\${{ matrix.bindir }}\bin\geometryc${{ matrix.config }}.exe" --version
+          ".build\${{ matrix.bindir }}\bin\shaderc${{ matrix.config }}.exe" --version
+          ".build\${{ matrix.bindir }}\bin\texturec${{ matrix.config }}.exe" --version
