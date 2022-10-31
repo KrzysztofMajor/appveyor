@@ -23,6 +23,7 @@ jobs:
       - name: Checkout bgfx
         uses: actions/checkout@v3
         with:
+          repository: bkaradzic/bx
           path: bgfx
       - name: Checkout bx
         uses: actions/checkout@v3
