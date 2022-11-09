@@ -3,7 +3,6 @@
   <!-- general -->
   <ItemDefinitionGroup>
     <ClCompile>
-	  <PreprocessorDefinitions>STEAMNETWORKINGSOCKETS_STATIC_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -13,12 +12,12 @@
 
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Release'">
     <Link>
-      <AdditionalDependencies>GameNetworkingSockets_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Edyn.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Debug'">
     <Link>
-      <AdditionalDependencies>GameNetworkingSockets_sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Edynd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
 </Project>

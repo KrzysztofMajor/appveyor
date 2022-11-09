@@ -15,7 +15,8 @@
   </metadata>
   <files>
 	<file src="edyn.targets" target="build\fluid.edyn.targets" />
-	<file src="package_x64\include\GameNetworkingSockets\**\*.h" target="build\include" />
+	<file src="package_x64\include\**\*.h" target="build\include" />
+	<file src="package_x64\include\**\*.hpp" target="build\include" />
 	
 	<file src="package_x64\lib\*.lib" target="build\lib" />
   </files>
