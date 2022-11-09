@@ -9,7 +9,6 @@ before_build:
 - cmd: nuget sources
 - cmd: nuget restore -PackagesDirectory ./edyn/packages
 - cmd: nuget update packages.config -RepositoryPath ./edyn/packages
-- ps: $xmlElem = Get-Content -Path .\packages.config
 - ps: $env:entt = $xmlElem.packages.package | Where-Object id -eq 'fluid.entt' | ForEach-Object { $_.version }
 - ps: Write-Host "entt version" $env:entt
 - cmd: call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
