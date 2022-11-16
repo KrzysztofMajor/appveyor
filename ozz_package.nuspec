@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>fluid.ozz</id>
+    <version>1.0.0</version>
+    <authors>samcoosh</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/guillaumeblanc/ozz-animation.git</projectUrl>
+    <description>https://github.com/guillaumeblanc/ozz-animation.git</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>native,C++,C</tags>
+    <repository type="git" url="https://github.com/guillaumeblanc/ozz-animation.git" />    
+  </metadata>
+  <files>
+	<file src="ozz.targets" target="build\fluid.ozz.targets" />
+	<file src="package_x64\include\**\*.h" target="build\include" />
+	<file src="package_x64\include\**\*.hpp" target="build\include" />
+	
+	<file src="package_x64\lib\*.lib" target="build\lib" />
+  </files>
+</package>

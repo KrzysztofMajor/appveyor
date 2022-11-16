@@ -1,0 +1,23 @@
+image:
+  - Visual Studio 2022
+  
+install:  
+  - git clone --depth 1 https://github.com/guillaumeblanc/ozz-animation.git ozz
+  
+before_build:
+- cmd: call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+- cmd: cmake -H.\ozz -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DCMAKE_DEBUG_POSTFIX="d" -Dozz_build_tools="OFF" -Dozz_build_samples="OFF" -Dozz_build_howtos="OFF" -Dozz_build_tests="OFF" -Dozz_build_postfix="OFF"
+
+build_script:
+- cmd: cmake --build build_x64 --target INSTALL --config Debug
+- cmd: cmake --build build_x64 --target INSTALL --config Release
+  
+after_test:
+  - cmd: nuget pack ozz_package.nuspec -Version %APPVEYOR_BUILD_VERSION%
+  
+artifacts:
+  - path: '**\*.nupkg'
+  
+deploy:
+- provider: Environment
+  name: nuget
