@@ -19,5 +19,6 @@
 	<file src="package_x64\include\**\*.hpp" target="build\include" />
 	
 	<file src="package_x64\lib\*.lib" target="build\lib" />
+	<file src="build_x64\src\animation\offline\tools\*.exe" target="build\bin" />
   </files>
 </package>
