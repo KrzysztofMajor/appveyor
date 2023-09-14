@@ -13,6 +13,7 @@
     <tags>native,yaml-cpp,C++,C,yaml</tags>
 	<repository type="git" url="https://github.com/jbeder/yaml-cpp.git" />
     <dependencies>
+	<group targetFramework="native" />
     </dependencies>
   </metadata>
   <files>
