@@ -17,7 +17,7 @@
     </dependencies>
   </metadata>
   <files>
-	<file src="yaml-cpp.targets"              target="build\fluid..yaml-cpp.targets" />  
+	<file src="yaml-cpp.targets"              target="build\fluid.yaml-cpp.targets" />  
 	<file src="package_x64\include\**\*.h" 	  target="build\include" />		
 	<file src="package_x64\lib\yaml-cpp.lib"  target="build\lib\yaml-cpp.lib" />	
 	<file src="package_x64\lib\yaml-cppd.lib" target="build\lib\yaml-cppd.lib" />	
