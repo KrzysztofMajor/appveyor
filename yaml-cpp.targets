@@ -16,7 +16,7 @@
       <AdditionalDependencies>yaml-cpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>  
-  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'vv143') And '$(Configuration)' == 'Debug'">
+  <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v143') And '$(Configuration)' == 'Debug'">
     <Link>
       <AdditionalDependencies>yaml-cppd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
