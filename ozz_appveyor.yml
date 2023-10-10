@@ -6,7 +6,7 @@ install:
   
 before_build:
 - cmd: call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
-- cmd: cmake -H.\ozz -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DCMAKE_DEBUG_POSTFIX="d" -Dozz_build_tools="ON" -Dozz_build_samples="OFF" -Dozz_build_howtos="OFF" -Dozz_build_tests="OFF" -Dozz_build_postfix="OFF"
+- cmd: cmake -H.\ozz -G "Visual Studio 17 2022" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64 -DCMAKE_DEBUG_POSTFIX="d" -Dozz_build_tools="ON" -Dozz_build_samples="OFF" -Dozz_build_howtos="OFF" -Dozz_build_tests="OFF" -Dozz_build_msvc_rtl_dll="ON" -Dozz_build_postfix="OFF"
 
 build_script:
 - cmd: cmake --build build_x64 --target INSTALL --config Debug
