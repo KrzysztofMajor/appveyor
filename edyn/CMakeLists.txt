@@ -5,6 +5,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 set(ARCH "Win32")
 if( MSVC )
+  add_compile_options(/wd4244 /wd4100 /wd4996 /wd4701 /wd4305 /wd4267 /wd4127 /wd4456 /wd4458)
   if( CMAKE_SIZEOF_VOID_P EQUAL 8 )    
 	set(ARCH "x64")
   endif()
