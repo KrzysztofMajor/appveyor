@@ -9,6 +9,7 @@ before_build:
 - cmd: nuget sources
 - cmd: nuget restore -PackagesDirectory ./edyn/packages
 - cmd: nuget update packages.config -RepositoryPath ./edyn/packages
+- cmd: nuget update packages.config -Id "fluid.entt"
 - ps: |
     [xml]$xmlElem = Get-Content -Path ./packages.config
     $env:entt = $xmlElem.packages.package | Where-Object id -eq 'fluid.entt' | ForEach-Object { $_.version }
