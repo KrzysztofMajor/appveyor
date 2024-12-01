@@ -14,6 +14,8 @@ if( MSVC )
   endif()
 endif()
 
+set(CMAKE_CXX_STANDARD 17)
+
 SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/fluid.openssl.1.0.27/build/include")
 SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/packages/fluid.openssl.1.0.27/build/${ARCH}/lib")	
 
